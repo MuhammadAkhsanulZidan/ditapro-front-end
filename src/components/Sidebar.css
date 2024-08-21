@@ -1,0 +1,39 @@
+/* src/components/Sidebar.css */
+
+/* Top menu for smaller screens */
+.unique-top-menu {
+    display: none; /* Hidden by default */
+  }
+  
+  @media (max-width: 767.98px) {
+    .unique-sidebar {
+      display: none; /* Hide sidebar on small screens */
+    }
+  
+    .unique-top-menu {
+      display: block; /* Show top menu on small screens */
+      background-color: var(--primary-color);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999; /* Ensure it appears above other content */
+      padding: 0.5rem 1rem;
+    }
+  
+    .unique-top-menu .nav-link {
+      display: flex;
+      align-items: center;
+      color: white;
+    }
+  
+    .unique-top-menu .nav-link i {
+      font-size: 1.25rem;
+      margin-right: 0.5rem;
+    }
+  
+    .unique-top-menu .nav-link span {
+      display: none;
+    }
+  }
+  
